@@ -1,1 +1,77 @@
-# Netflix-clone-beginner-level.
+# Netflix-clone-beginner-level (css)
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: #fff;
+  line-height: 1.6;
+}
+header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 20px; position: fixed; width: 100%; background: #141414;
+  z-index: 1000;
+}
+.logo img { height: 40px; }
+nav ul {
+  list-style: none; display: flex; gap: 20px;
+}
+nav a {
+  text-decoration: none; color: #fff; font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav a:hover { color: #e50914; }
+
+.hero {
+  height: 80vh;
+  background: url('images/hero-bg.jpg') no-repeat center/cover;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center; text-align: center;
+  padding: 0 20px;
+}
+.hero h1 { font-size: 3rem; margin-bottom: 10px; }
+.hero p { font-size: 1.5rem; margin-bottom: 20px; }
+.hero button {
+  padding: 10px 20px; font-size: 1rem;
+  background-color: #e50914; color: #fff;
+  border: none; border-radius: 5px; cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.hero button:hover { background-color: #b20710; }
+
+.content {
+  padding: 50px 20px;
+}
+.content h2 {
+  font-size: 2rem; margin-bottom: 20px; text-align: center;
+}
+.row {
+  display: flex; gap: 20px; justify-content: center;
+}
+.card {
+  width: 150px; height: 225px; overflow: hidden;
+  border-radius: 10px; transition: transform 0.3s ease;
+}
+.card img {
+  width: 100%; height: 100%; object-fit: cover;
+}
+.card:hover { transform: scale(1.1); }
+
+footer {
+  text-align: center; padding: 20px;
+  background: #141414; border-top: 1px solid #333;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2rem; }
+  .hero p { font-size: 1rem; }
+  .card { width: 120px; height: 180px; }
+}
+body {
+    background: url('https://isquad.tv/wp-content/uploads/2018/08/Netflix-Background-1024x576.jpg');
+    background-size: cover;
+    height: 100vh;
+}
